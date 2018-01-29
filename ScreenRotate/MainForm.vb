@@ -21,18 +21,18 @@
     End Sub
 
     Protected Overrides Sub OnKeyUp(ByVal e As System.Windows.Forms.KeyEventArgs)
-        RotateScreen(CInt(Rnd() * 3))
+        'RotateScreen(CInt(Rnd() * 3))
 
-        'Select Case e.KeyCode
-        '    Case Keys.Up
-        '        RotateScreen(Rotate.RotateDegress.Degrees_0)
-        '    Case Keys.Right
-        '        RotateScreen(Rotate.RotateDegress.Degrees_90)
-        '    Case Keys.Down
-        '        RotateScreen(Rotate.RotateDegress.Degrees_180)
-        '    Case Keys.Left
-        '        RotateScreen(Rotate.RotateDegress.Degrees_270)
-        'End Select
+        Select Case e.KeyCode
+            Case Keys.Up
+                RotateScreen(Rotate.RotateDegress.Degrees_0)
+            Case Keys.Right
+                RotateScreen(Rotate.RotateDegress.Degrees_90)
+            Case Keys.Down
+                RotateScreen(Rotate.RotateDegress.Degrees_180)
+            Case Keys.Left
+                RotateScreen(Rotate.RotateDegress.Degrees_270)
+        End Select
 
     End Sub
 
